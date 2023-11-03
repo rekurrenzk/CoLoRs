@@ -12,14 +12,14 @@ A = np.array([
 ], dtype=np.dtype(float))
 
 b = np.array([3,5,1], dtype=np.dtype(float))
-
+"""
 print("Matrix A:", "\n", f"{A}")
 print("Vector b:", "\n", f"{b}")
 print()
 
 print("shape of A is: ", np.shape(A))
 print("Shape of b is: ", np.shape(b))
-
+"""
 
 # calculating the determinant of A and finding out if it is singular or non-singular
 det_A = np.linalg.det(A)
