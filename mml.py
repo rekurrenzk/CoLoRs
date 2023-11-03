@@ -1,5 +1,35 @@
+
+
 import numpy as np
 
 
-def mml(x, y, z):
-    
+# Matrix Array # 
+
+A = np.array([
+    [4,2,1],
+    [4,0,0],
+    [-1,-5,1]
+], dtype=np.dtype(float))
+
+b = np.array([3,5,1], dtype=np.dtype(float))
+
+print("Matrix A:", "\n", f"{A}")
+print("Vector b:", "\n", f"{b}")
+print()
+
+print("shape of A is: ", np.shape(A))
+print("Shape of b is: ", np.shape(b))
+
+
+# calculating the determinant of A and finding out if it is singular or non-singular
+det_A = np.linalg.det(A)
+
+if det_A == 0:
+    print(f"Matrix A is singular {det_A:.2f}")
+else:
+    print(f"Matrix A is non-singular {det_A:.2f}")
+
+print()
+
+# Row Reduction # 
+
